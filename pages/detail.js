@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-
+import "isomorphic-fetch";
 import Link from "next/link";
 
 import withAnalytics from "~/hocs/withAnalytics";

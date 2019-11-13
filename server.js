@@ -9,5 +9,5 @@ const app = next({
 const handler = routes.getRequestHandler(app);
 
 app.prepare().then(() => {
-  createServer(handler).listen(3000);
+  createServer(handler).listen(process.env.PORT || 3000);
 });
